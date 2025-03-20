@@ -1,6 +1,8 @@
-<script lang="ts">
-	import '../app.css';
-	let { children } = $props();
+<script>
+  import { base } from "$app/paths";
+  import "../app.css";
 </script>
 
-{@render children()}
+<div class="app">
+  <slot />
+</div>
